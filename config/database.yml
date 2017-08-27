@@ -6,17 +6,21 @@ default: &default
 development:
   <<: *default
   username: root
-  password: Gallo.23gallogol
+  password: 
   host: localhost
   database: MobiliStore_development
 
 test:
   <<: *default
   username: root
-  password: Gallo.23gallogol
+  password: 
   host: localhost
   database: MobiliStore_test
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  username: ipospvyxuiqhcz
+  password: 1ce2546cec629e33e6a7ef9773007498c1964c1854660e43046a5329017c79fd
+  host: ec2-54-221-221-153.compute-1.amazonaws.com
+  port: 5432
+  database: d1kob1amv1qlbv
