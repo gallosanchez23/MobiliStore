@@ -1,0 +1,22 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  username: root
+  password: Gallo.23gallogol
+  host: localhost
+  database: MobiliStore_development
+
+test:
+  <<: *default
+  username: root
+  password: Gallo.23gallogol
+  host: localhost
+  database: MobiliStore_test
+
+production:
+  <<: *default
+  database: db/production.sqlite3
