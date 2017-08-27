@@ -8,8 +8,8 @@ class Api::V1::AppCommunicationController < ApplicationController
 			format.json{
       	bars_code = json_data['product']['bars_code']
       	@product = Product.find_by(bars_code: bars_code)
-				#json_response(@product)
-				logger.info(@product.inspect)
+				json_response(@product)
+				#logger.info(@product.inspect)
 			}
     end
 	end
